@@ -24,15 +24,20 @@ public:
 		numRides=0;
 		indice=0;
 	}
-	void nuevoTrayecto(coordenadas c){
+	coche::void nuevoTrayecto(coordenadas c){
+		orden[numRides]=c;
 		numRides++;
-		filaActual=c.
+		dameCoord(filaActual, columActual);
+		
 	}
-	/*int calcularDistancia(){
+	coche::int dameRides(){
+		return numRides;
+	}
 
-	}*/
-	
-	
+	coche::int coordActual(int &x, int&y){
+		x=filaActual;
+		y=columActual;
+	}
 };
 
 

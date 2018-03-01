@@ -18,21 +18,26 @@ private:
 	
 
 public:
-	coche(){
+	coche::coche(){
 		filaActual=0;
 		columActual=0;
 		numRides=0;
 		indice=0;
 	}
-	void nuevoTrayecto(coordenadas c){
+	coche::void nuevoTrayecto(coordenadas c){
+		orden[numRides]=c;
 		numRides++;
 		dameCoord(filaActual, columActual);
+		
 	}
-	/*int calcularDistancia(){
+	coche::int dameRides(){
+		return numRides;
+	}
 
-	}*/
-	
-	
+	coche::int coordActual(int &x, int&y){
+		x=filaActual;
+		y=columActual;
+	}
 };
 
 
