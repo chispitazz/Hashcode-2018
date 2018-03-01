@@ -38,6 +38,10 @@ public:
 	friend int damedistancia(coordenadas c){
 		return c.distancia;
 	}
+	friend void dameCoord(coordenadas c, int &x1, int &y1){
+		x1=c.x;
+		y1=c.y;
+	}
 };
 
 #endif

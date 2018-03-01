@@ -32,8 +32,11 @@ public:
 	friend int distancia(coordenadas c, int fila, int columna){
 		return abs(c.a-fila)+abs(c.b-columna);
 	}
-	friend int dameID(){
-		return id;
+	friend int dameID(coordenadas c){
+		return c.id;
+	}
+	friend int damedistancia(coordenadas c){
+		return c.distancia;
 	}
 };
 
